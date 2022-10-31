@@ -506,12 +506,21 @@
                     <textarea class="form-modal-textarea" name="user-comment" rows="10" placeholder="Введіть текст"></textarea>
                 </label>
 
-                <label class="form-modal-label-chackbox">
-                    <input class="form-modal-checkbox-input" type="checkbox" name="chackbox-agriment">
-                    <span>Погоджуюся з розсилкою та приймаю</span>
-                    <a href="#">Умови договору</a>
-                </label>
-                
+                <div class="checkbox-label-wrap">
+                    <label class="form-modal-label-chackbox">
+                        <input class="form-modal-checkbox-input visually-hidden" type="checkbox" name="chackbox-agriment">
+                        <span class="form-modal-custom-checkbox">
+                            <svg class="form-modal-custom-checkbox-checked" width="16" height="15">
+                                <use href="./images/icon.svg#icon-checked"></use>
+                            </svg>
+                        </span>
+                        <span class="form-modal-chackbox-title">
+                            Погоджуюся з розсилкою та приймаю                        
+                        </span>
+                    </label>
+
+                    <a class="form-modal-chackbox-link" href="#">Умови договору</a>
+                </div>
                 <button class="form-modal-btn-submit" type="submit">Відправити</button>
 
             </form>

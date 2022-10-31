@@ -988,14 +988,64 @@ ul {
   cursor: pointer;
 }
 
+.checkbox-label-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
 .form-modal-label-chackbox {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 30px;
+
+  cursor: pointer;
 }
 
+.form-modal-custom-chackbox {
+  position: relative;
+  display: inline-block;
+  width: 16px;
+  height: 15px;
 
+  border: 1px solid var(--color-titles);
+  border-radius: 2px;
+}
+
+.form-modal-custom-chackbox-chacked {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+  opacity: 0;
+
+  background-color: var(--color-accent);
+  fill: #fff;
+
+  border-radius: 2px;
+
+  transition: opacity var(--transition-duration-cubic);
+}
+
+.form-modal-checkbox-input:chacked + 
+.form-modal-custom-checkbox > .form-modal-custom-checkbox-checked {
+  opacity: 1;
+}
+
+.form-modal-chackbox-title {
+  display: inline-block;
+  margin-left: 8.4px;
+
+  color: var(--color-text-primary);
+}
+
+.form-modal-chackbox-link {
+  display: inline-block;
+  margin-left: 4px;
+  color: var(--color-accent);
+}
 
 .form-modal-btn-submit {
   display: block;
