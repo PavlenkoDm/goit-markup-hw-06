@@ -995,7 +995,7 @@ ul {
   margin-bottom: 30px;
 }
 
-.form-modal-label-chackbox {
+.form-modal-label-checkbox {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1003,7 +1003,7 @@ ul {
   cursor: pointer;
 }
 
-.form-modal-custom-chackbox {
+.form-modal-custom-checkbox {
   position: relative;
   display: inline-block;
   width: 16px;
@@ -1013,7 +1013,7 @@ ul {
   border-radius: 2px;
 }
 
-.form-modal-custom-chackbox-chacked {
+.form-modal-custom-checkbox-checked {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1029,7 +1029,7 @@ ul {
   transition: opacity var(--transition-duration-cubic);
 }
 
-.form-modal-checkbox-input:chacked + 
+.form-modal-checkbox-input:checked + 
 .form-modal-custom-checkbox > .form-modal-custom-checkbox-checked {
   opacity: 1;
 }
