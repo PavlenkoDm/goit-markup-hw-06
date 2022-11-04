@@ -917,6 +917,7 @@ ul {
 
 .form-modal-input-svg-wrap {
   position: relative;
+  display: block;
 }
 
 .form-modal-ptm-input {
